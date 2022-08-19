@@ -70,11 +70,13 @@ const findKeyInBox = (box) => {
       if (currentBox.contents[i].type === 'key') {
         return console.log(`Found the key in Box ${currentBox.id}!`);
       }
-      
+
       if (currentBox.contents[i].type === 'box') {
-        console.log(`Found Box ${currentBox.contents[i].id} in Box ${currentBox.id}`);
+        console.log(
+          `Found Box ${currentBox.contents[i].id} in Box ${currentBox.id}`
+        );
         pile.push(currentBox.contents[i]);
       }
     }
   }
-}
+};

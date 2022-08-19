@@ -65,10 +65,10 @@ const findKeyInBox = (box) => {
     if (box.contents[i].type === 'key') {
       return console.log(`Found the key in Box ${box.id}!`);
     }
-    
+
     if (box.contents[i].type === 'box') {
       console.log(`Found Box ${box.contents[i].id} in Box ${box.id}`);
       findKeyInBox(box.contents[i]);
     }
   }
-}
+};

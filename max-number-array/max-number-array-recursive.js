@@ -1,6 +1,4 @@
-const numbers = [1, 3, 8, 5, 7];
-
-const maxNumberArray = (numbers) => {
+export const maxNumberArray = (numbers) => {
   if (numbers.length <= 1) {
     return numbers[0];
   }
@@ -9,4 +7,4 @@ const maxNumberArray = (numbers) => {
   const numberB = maxNumberArray(numbers.slice(1));
 
   return numberA > numberB ? numberA : numberB;
-}
+};

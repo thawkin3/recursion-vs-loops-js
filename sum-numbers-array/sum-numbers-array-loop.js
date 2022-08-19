@@ -1,6 +1,4 @@
-const numbers = [1, 3, 8, 5, 7];
-
-const sumNumbersArray = (numbers) => {
+export const sumNumbersArray = (numbers) => {
   let sum = 0;
 
   for (let i = 0; i < numbers.length; i++) {
@@ -8,4 +6,4 @@ const sumNumbersArray = (numbers) => {
   }
 
   return sum;
-}
+};
