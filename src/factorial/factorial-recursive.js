@@ -3,7 +3,7 @@ export const factorial = (x) => {
     throw new Error('x must be greater than or equal to 0');
   }
 
-  if (x === 0) {
+  if (x <= 1) {
     return 1;
   }
 
